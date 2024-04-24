@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-docker-wala
+  namespace: docker-wala-namespace
+spec:
+  selector:
+    matchLabels:
+      app: nginx-docker-wala
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: nginx-docker-wala
+    spec:
+      containers:
+      - name: nginx-docker-wala
+        image: #afnai image halne yesma
+        ports:
+        - containerPort: 80
