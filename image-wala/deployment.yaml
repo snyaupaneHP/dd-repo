@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: nginx-docker-wala
-        image: shital1999/nginx:1.1.0 #afnai image halne yesma
+        image: shital1999/nginx:1.1.0 # {"$imagepolicy": "flux-system:image-policy"}
         ports:
         - containerPort: 80
